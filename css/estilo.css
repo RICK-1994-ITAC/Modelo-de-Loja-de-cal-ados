@@ -11,7 +11,7 @@ body{
 
 .cabecalho {
     background-color: rgb(54, 53, 53);
-    padding: 1rem;
+    padding: 2rem;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -25,13 +25,14 @@ body{
     align-items: center;
     justify-content: space-around;
     position: relative;
+    width: 100%;
 }
 
-.img-Reader{
+.img-header{
     display: flex;
 }
 
-.img-Reader img{
+.img-header img{
     max-width: 30px;
     margin-left: 10px;
     cursor: pointer;
@@ -44,18 +45,19 @@ nav ul{
     
 }
 
-ul li {
+ul li a {
     margin-right: 24px;
     color: white;
-    padding: 15px;
-    
+    padding: 1rem;
+    font-size: 1.3rem;
 }
 
-ul li:hover {
+ul li a:hover {
     transform: translateY(-5px);
     transition: 0.5s;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: bolder;
+    color: #004c94;
 }
 
 .menu {
@@ -70,10 +72,13 @@ span{
     color: rgb(199, 19, 100);
 }
 
+.section-home {
+    padding-top: 100px;
+}
+
 .apresentacao {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     align-items: center;
     background-image: radial-gradient(#fff,#c7c7c7);
 }
@@ -109,8 +114,8 @@ main{
 }
 
 .info-right h2{
-    font-size: 50px;
-    padding: 20px;
+    font-size: 3rem;
+    padding: 1.6rem;
 }
     
 .produtos-destaque {
