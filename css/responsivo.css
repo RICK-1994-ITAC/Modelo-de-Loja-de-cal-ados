@@ -19,17 +19,22 @@
         padding-top: 80px;
     }
 
+    .cabecalho {
+        display: flex;
+        align-items: center;
+    }
+
     .navbar {
-        width: 100%;
-        position: relative;
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
     }
 
     nav {
         position: absolute;
         background-color: #2c2c2c;
-        width: 100%;
+        width: 100vw;
         top: 60px;
-        left: 0;
         display: none;
     }
     
@@ -51,11 +56,7 @@
     
     .aparecer-menu {
         display: block;
-        width: 100%;
-    }
-
-    .navbar {
-        justify-content: space-between;
+        width: 100vw;
     }
 
     .imagens-categorias img{
@@ -71,6 +72,10 @@
 }
 
 @media(max-width: 688px){
+
+    .logo{
+        font-size: 1.5rem;
+    }
 
     .section-home
     .apresentacao
@@ -98,10 +103,6 @@
         margin: 2rem 0 0;
     }
 
-    .navbar {
-        justify-content: space-between;
-    }
-
     .imagens-produtos-selecionados {
         grid-template-columns: repeat(2,1fr);
     }
@@ -123,13 +124,12 @@
 
 @media(max-width: 425px) {
 
-    .section-home{
-        height: 100vh;
+    .logo{
+        font-size: 1rem;
     }
 
-    .aparecer-menu {
-        display: block;
-        width: 100%;
+    .section-home{
+        height: 100vh;
     }
 
     .section-home
